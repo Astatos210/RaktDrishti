@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#991B1B">
+  <meta name="description" content="Raktdrishti is a student-built prototype exploring accessible, point-of-care hemoglobin screening.">
+  <title>Raktdrishti — Accessible Hemoglobin Screening</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>a:focus-visible,button:focus-visible{outline:3px solid #0284C7;outline-offset:3px}.brand-icon{width:37px;height:41px;overflow:visible;border:0;background:transparent}.brand-icon img{width:30px;height:39px;object-fit:contain;object-position:center;transform:none}</style>
+  <style>:where([data-icon]){display:inline-flex;align-items:center;justify-content:center}:where([data-icon]) svg{width:1em;height:1em}.brand-icon{position:relative}.brand-icon.image-loading:after{animation:brand-load .8s linear infinite;border:2px solid #f2d6d3;border-right-color:#991B1B;border-radius:50%;content:"";height:13px;position:absolute;width:13px}@keyframes brand-load{to{transform:rotate(360deg)}}</style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header" id="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Raktdrishti home">
+        <span class="brand-icon"><img src="assets/img/favicon.svg.svg" alt="" data-loading></span>
+        <span>Raktdrishti</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#problem">Problem</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#features">Features</a>
+        <a href="#technology">Technology</a>
+        <a href="#impact">Impact</a>
+        <a href="#team">Team</a>
+        <a class="button button--small" href="#prototype">View Prototype 
+          <span data-icon="arrow-up-right"></span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section-pattern" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="pulse-dot"></span> Affordable Point-of-Care Hemoglobin Screening</p>
+          <h1>Fast, Affordable <span>Anemia Screening</span> — When It Matters Most.</h1>
+          <p class="hero-lead">Raktdrishti is a student-built hemoglobin testing prototype designed to make anemia screening quicker, more affordable, and easier to access. Using a small blood sample of approximately 10–15 mL, it helps deliver rapid readings without depending on a full laboratory setup.</p>
+          <div class="button-row"><a class="button" href="#how-it-works">See How It Works <span data-icon="arrow-right"></span></a><a class="button button--ghost" href="#prototype">Explore the Prototype</a></div>
+          <ul class="hero-points" aria-label="Raktdrishti key attributes">
+            <li><span data-icon="droplet"></span><span><strong>Small Blood Sample</strong><small>Approx. 10–15 mL</small></span></li><li><span data-icon="timer"></span><span><strong>Rapid Results</strong><small>Screening workflow</small></span></li><li><span data-icon="wallet"></span><span><strong>Low-Cost Screening</strong><small>Designed for access</small></span></li>
+          </ul>
+          <p class="prototype-note"><span data-icon="info"></span> Raktdrishti is an educational prototype intended for screening and research evaluation. It is not a replacement for professional medical diagnosis.</p>
+        </div>
+        <div class="hero-visual reveal" data-delay="120" role="img" aria-label="Illustration of the Raktdrishti device prototype and a digital hemoglobin screening interface">
+          <div class="orb orb--red"></div><div class="orb orb--teal"></div><div class="data-path path-one"></div><div class="data-path path-two"></div>
+          <div class="hero-badge"><span data-icon="cpu"></span> Sensor-powered concept</div><div class="device-shadow"></div>
+          <div class="device"><div class="device-top"><span class="device-brand"><i></i> RAKTDRISHTI</span><span class="power-dot"></span></div><div class="device-display"><span class="display-label">HEMOGLOBIN ESTIMATE</span><strong>11.2 <small>g/dL</small></strong><div class="display-scale"><i></i><b></b><em></em></div><span class="display-status">Follow-up suggested</span></div><div class="device-base"><span></span><span></span><span></span></div></div>
+          <div class="sample-card"><div class="sample-top"><span class="sample-dot"></span><small>TESTING CHAMBER</small></div><div class="sample-well"><span></span></div><small>Sample seated for reading</small></div>
+          <div class="floating-reading"><span data-icon="activity"></span><div><small>RAPID WORKFLOW</small><strong>Ready to review</strong></div></div><p class="visual-caption">Raktdrishti Device Prototype <span>•</span> concept visualization</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section problem-section" id="problem">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow eyebrow--red">The problem</p>
+          <h2>Anemia Often Goes 
+            <span>Undetected.</span>
+          </h2>
+          <p>Anemia can affect energy, concentration, pregnancy outcomes, and overall well-being. Yet testing is often delayed because laboratory testing may be expensive, time-consuming, or difficult to access.</p>
+        </div>
+        <div class="problem-grid" data-stagger>
+          <article class="problem-card reveal">
+            <span class="icon-box icon-box--red" data-icon="clock"></span>
+            <span class="card-index">01</span>
+            <h3>Delayed Testing</h3>
+            <p>Traditional testing can require travel, sample handling, and waiting for laboratory reports.</p>
+          </article>
+          <article class="problem-card reveal">
+            <span class="icon-box icon-box--teal" data-icon="map-pin"></span>
+            <span class="card-index">02</span>
+            <h3>Limited Accessibility</h3>
+            <p>Remote communities and health camps may not always have convenient access to laboratory infrastructure.</p>
+          </article>
+          <article class="problem-card reveal">
+            <span class="icon-box icon-box--amber" data-icon="indian-rupee"></span>
+            <span class="card-index">03</span>
+            <h3>Cost Barriers</h3>
+            <p>Repeated screening can become difficult when affordable testing options are unavailable.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="solution">
+      <div class="container solution-grid">
+        <div class="solution-visual reveal">
+          <div class="solution-image-label">
+            <span data-icon="scan"></span> Device Testing Setup
+          </div>
+          <div class="testing-stage">
+            <div class="stage-grid">
+
+            </div>
+            <div class="test-device">
+              <div></div>
+              <i></i>
+              <b></b>
+            </div>
+            <div class="test-cuvette">
+              <i></i>
+            </div>
+            <div class="test-sensor">
+              <span></span>
+            </div>
+            <span class="stage-label label-one">Optical sensor</span>
+            <span class="stage-label label-two">Micro-cuvette</span>
+          </div>
+          <div class="mini-stat">
+            <span data-icon="flask"></span>
+            <div>
+              <strong>0.07–0.1 mL</strong>
+              <small>Approx. sample size</small>
+            </div>
+          </div>
+        </div>
+        <div class="solution-copy reveal" data-delay="80">
+          <p class="eyebrow eyebrow--teal">The solution</p>
+          <h2>Introducing 
+            <span>Raktdrishti</span>
+          </h2>
+          <p>Raktdrishti is a compact anemia-screening prototype that aims to make hemoglobin testing more accessible. It combines a small-sample blood testing approach with a digital interface to provide rapid, easy-to-understand results.</p>
+          <ul class="feature-list">
+            <li>
+              <span data-icon="check"></span> Small sample requirement: approximately 0.07–0.1 mL
+            </li>
+            <li>
+              <span data-icon="check"></span> Faster workflow than conventional lab-based testing
+            </li>
+            <li>
+              <span data-icon="check"></span> Designed with affordability in mind
+            </li>
+            <li><span data-icon="check"></span> Portable concept for screening environments
+            </li>
+          </ul>
+          <a class="button button--outline" href="#technology">Learn About the Technology 
+            <span data-icon="arrow-right"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section workflow-section" id="how-it-works"><div class="container"><div class="section-heading section-heading--center reveal"><p class="eyebrow eyebrow--blue">How it works</p><h2>Simple Testing. <span>Clear Results.</span></h2><p>A clear, prototype-level workflow designed for screening contexts and professional review.</p></div><div class="workflow" data-stagger><div class="workflow-line"></div>
+      <article class="workflow-step reveal"><div class="step-art"><span data-icon="droplet"></span></div><span class="step-number">01</span><h3>Collect Sample</h3><p>A small blood sample of approximately 10–15 mL is collected following appropriate safety procedures.</p></article>
+      <article class="workflow-step reveal"><div class="step-art step-art--blue"><span data-icon="container"></span></div><span class="step-number">02</span><h3>Insert for Analysis</h3><p>The sample is placed in the Raktdrishti testing setup for measurement.</p></article>
+      <article class="workflow-step reveal"><div class="step-art step-art--teal"><span data-icon="cpu"></span></div><span class="step-number">03</span><h3>Process Reading</h3><p>The device processes the sample and estimates hemoglobin-related readings.</p></article>
+      <article class="workflow-step reveal"><div class="step-art step-art--red"><span data-icon="monitor"></span></div><span class="step-number">04</span><h3>View Result</h3><p>Results are displayed digitally for quick screening and further professional review if required.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="features">
+  <div class="container">
+    <div class="section-heading reveal">
+      <p class="eyebrow eyebrow--red">Why Raktdrishti</p>
+      <h2>Built for Access, Speed, 
+        <span>and Impact.</span>
+      </h2>
+    </div>
+    <div class="benefit-grid" data-stagger>
+      <article class="benefit-card reveal">
+        <span class="benefit-icon" data-icon="wallet"></span>
+        <h3>Affordable</h3>
+        <p>Designed to reduce the cost barrier associated with routine hemoglobin screening.</p>
+        <a href="#prototype" aria-label="Explore affordable screening design">
+          <span data-icon="arrow-up-right"></span>
+        </a>
+      </article>
+      <article class="benefit-card reveal">
+        <span class="benefit-icon benefit-icon--blue" data-icon="zap"></span>
+        <h3>Rapid</h3>
+        <p>Helps shorten the time between sample collection and initial result display.</p>
+        <a href="#how-it-works" aria-label="Explore rapid workflow">
+          <span data-icon="arrow-up-right"></span>
+        </a>
+      </article>
+      <article class="benefit-card reveal">
+        <span class="benefit-icon benefit-icon--teal" data-icon="briefcase"></span>
+        <h3>Portable</h3>
+        <p>A compact concept suitable for clinics, health camps, and decentralized screening.</p>
+        <a href="#technology" aria-label="Explore portable concept">
+          <span data-icon="arrow-up-right"></span>
+        </a>
+      </article>
+      <article class="benefit-card reveal">
+        <span class="benefit-icon benefit-icon--amber" data-icon="heart"></span>
+        <h3>Human-Centered</h3>
+        <p>Designed to support earlier awareness and timely consultation with healthcare professionals.</p>
+        <a href="#impact" aria-label="Explore project impact">
+          <span data-icon="arrow-up-right"></span>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+    <section class="section dashboard-section" id="prototype">
+      <div class="container dashboard-layout">
+        <div class="dashboard-copy reveal">
+          <p class="eyebrow eyebrow--blue">Prototype interface</p>
+          <h2>Clear Readings for 
+            <span>Better Screening.</span>
+          </h2>
+          <p>Raktdrishti pairs its device concept with an interface that makes screening information simple to inspect and share with appropriate healthcare professionals.</p>
+          <div class="legend">
+            <span>
+              <i class="legend-green"></i>Within configured reference range
+            </span>
+            <span><i class="legend-amber"></i>Needs attention / follow-up
+            </span>
+            <span><i class="legend-red"></i> Priority follow-up recommended</span>
+          </div>
+        </div>
+        <div class="dashboard-card reveal" data-delay="100">
+          <div class="dash-top">
+            <div>
+              <small>RAKTDISHTI</small>
+              <strong>Screening dashboard</strong>
+            </div>
+            <span class="demo-chip">DEMO DATA</span>
+          </div>
+          <div class="dash-main">
+            <div class="patient-meta">
+              <span>
+                <small>SAMPLE ID</small>
+                <strong>RD-1024</strong>
+              </span>
+              <span>
+                <small>DATE</small>
+                <strong>Demo Sample</strong>
+              </span>
+              <span>
+                <small>TEST TIME</small>
+                <strong>Rapid workflow</strong>
+              </span>
+            </div>
+            <div class="result-row">
+              <div>
+                <small>HEMOGLOBIN ESTIMATE</small>
+                <strong>11.2 <em>g/dL</em></strong>
+                <span class="follow-up"><i></i> Requires Follow-up</span>
+              </div>
+              <div class="hb-scale">
+                <span>Hb reference scale</span>
+                <div class="scale-bar">
+                  <i></i>
+                  <b></b>
+                  <em></em>
+                  <mark></mark>
+                </div>
+                <div>
+                  <small>Lower</small>
+                  <small>Configured range</small>
+                  <small>Higher</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="chart-panel">
+            <div class="chart-head">
+              <strong>Sample Readings Overview</strong>
+              <span>Screening session</span>
+            </div>
+            <svg class="line-chart" viewBox="0 0 450 120" role="img" aria-label="Illustrative sample readings line chart">
+              <defs>
+                <linearGradient id="chartFill" x1="0" x2="0" y1="0" y2="1">
+                  <stop stop-color="#991B1B" stop-opacity=".22"/>
+                  <stop offset="1" stop-color="#991B1B" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <path class="gridline" d="M0 20H450M0 60H450M0 100H450"/>
+              <path class="area" d="M0 88 C32 82 46 60 74 64 S118 94 150 75 S191 34 225 49 S270 77 300 63 S350 30 380 42 S420 29 450 20 V120 H0Z"/>
+              <path class="chart-line" d="M0 88 C32 82 46 60 74 64 S118 94 150 75 S191 34 225 49 S270 77 300 63 S350 30 380 42 S420 29 450 20"/>
+              <circle cx="380" cy="42" r="5"/>
+            </svg>
+          </div>
+          <p class="dash-disclaimer">
+            <span data-icon="info"></span>
+             Displayed values are representative demonstration data and must be interpreted by qualified healthcare professionals.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section technology-section" id="technology">
+      <div class="container">
+        <div class="section-heading section-heading--center reveal">
+          <p class="eyebrow eyebrow--blue">Technology</p>
+          <h2>Technology Behind 
+            <span>Raktdrishti</span>
+          </h2>
+          <p>A modular project architecture built for learning, iteration, and accessible healthcare innovation.</p>
+        </div>
+        <div class="architecture reveal" aria-label="Raktdrishti technology architecture">
+          <div class="architecture-node hardware">
+            <span data-icon="droplet"></span>
+            <strong>Blood Sample</strong>
+          </div>
+          <i></i>
+          <div class="architecture-node hardware">
+            <span data-icon="scan"></span>
+            <strong>Testing Chamber<br>/ Sensor Module</strong>
+          </div>
+          <i></i>
+          <div class="architecture-node">
+            <span data-icon="cpu"></span>
+            <strong>Embedded<br>Controller</strong>
+          </div><i></i><div class="architecture-node">
+            <span data-icon="waveform"></span>
+            <strong>Signal<br>Processing</strong>
+          </div>
+        <i></i>
+        <div class="architecture-node display">
+          <span data-icon="monitor"></span>
+          <strong>Digital Display<br>/ Web Portal</strong>
+        </div>
+        <i></i>
+        <div class="architecture-node storage">
+          <span data-icon="database"></span>
+          <strong>Secure Reading<br>Storage</strong>
+        </div>
+      </div>
+      <div class="tech-tags reveal">
+        <span>Embedded Systems</span>
+        <span>Optical / Sensor-Based Analysis</span>
+        <span>Arduino / Microcontroller</span>
+        <span>IoT-Ready Architecture</span>
+        <span>Web Dashboard</span>
+        <span>Data Visualization</span>
+      </div>
+    </div>
+  </section>
+
+    <section class="impact-section" id="impact">
+      <div class="impact-pattern"></div>
+      <div class="container impact-content">
+        <div class="impact-copy reveal">
+          <p class="eyebrow eyebrow--light">The impact</p>
+          <h2>Technology With a Purpose</h2>
+          <p>Raktdrishti was created with the vision of making timely anemia screening more accessible. By exploring lower-cost and faster testing workflows, the project aims to support community health initiatives, awareness drives, and early screening efforts.</p>
+          <a class="button button--light-outline" href="#team">Read Our Project Story 
+            <span data-icon="arrow-right"></span>
+          </a>
+        </div>
+        <div class="impact-stats reveal" data-delay="120">
+          <div>
+            <strong>0.07–0.1 mL</strong>
+            <span>Sample Volume</span>
+          </div>
+          <div>
+            <strong>Rapid</strong>
+            <span>Screening Workflow</span>
+          </div>
+          <div>
+            <strong>Low-Cost</strong>
+            <span>Design Goal</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section team-section" id="team">
+      <div class="container">
+        <div class="section-heading section-heading--center reveal">
+          <p class="eyebrow eyebrow--red">Our team</p>
+          <h2>Built by Students, 
+            <span>Driven by Impact.</span>
+          </h2>
+          <p>Raktdrishti is developed by a multidisciplinary student team combining embedded systems, electronics, software, data visualization, and healthcare innovation.</p>
+        </div>
+        <div class="team-grid" data-stagger>
+          <article class="team-card reveal">
+            <div class="team-avatar avatar-one">
+              <span>AS</span>
+            </div>
+            <h3>Team Member</h3>
+            <p class="team-role">Embedded Systems &amp; Hardware</p>
+            <p>Building the prototype’s electronic foundation and testing workflow.</p>
+          </article>
+          <article class="team-card reveal">
+            <div class="team-avatar avatar-two">
+              <span>PS</span>
+            </div>
+            <h3>Team Member</h3>
+            <p class="team-role">Sensor Integration</p>
+            <p>Exploring sensor setup and measurement pathways for the prototype.</p>
+          </article><article class="team-card reveal"><div class="team-avatar avatar-three">
+            <span>RK</span>
+          </div>
+          <h3>Team Member</h3>
+          <p class="team-role">Web Portal &amp; Dashboard</p>
+          <p>Creating clear, approachable interfaces for demonstration data.</p>
+        </article>
+        <article class="team-card reveal">
+          <div class="team-avatar avatar-four">
+            <span>MK</span>
+          </div>
+          <h3>Team Member</h3>
+          <p class="team-role">Research &amp; Documentation</p>
+          <p>Connecting project research, responsible claims, and presentation.</p>
+        </article>
+      </div>
+      <p class="team-note reveal">
+        <span data-icon="users"></span> 
+        Raktdrishti Team — student innovators in accessible healthcare</p>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="container final-cta-inner reveal">
+        <div>
+          <p class="eyebrow eyebrow--red">Explore the project</p>
+          <h2>Explore the Future of Accessible Anemia Screening.</h2>
+          <p>Discover how Raktdrishti combines affordable hardware, rapid testing concepts, and digital data access into one student-built innovation.</p>
+        </div>
+        <div class="button-row">
+          <a class="button" href="#prototype">View Prototype 
+            <span data-icon="arrow-right">
+
+            </span>
+          </a>
+          <a class="button button--ghost" href="mailto:raktdrishti@gmail.com">Contact the Team</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-intro">
+          <a class="brand" href="#home"><span class="brand-icon">
+            <img src="assets/img/favicon.svg.svg" alt="">
+          </span>
+          <span>Raktdrishti</span>
+        </a><p>A student innovation exploring accessible, low-cost hemoglobin screening workflows.</p>
+        <div class="social-links">
+          <a href="#" aria-label="LinkedIn">
+            <span data-icon="linkedin">
+
+            </span>
+          </a>
+          <a href="#" aria-label="GitHub">
+            <span data-icon="github"></span>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <span data-icon="instagram"></span>
+          </a>
+        </div>
+      </div>
+      <div><h3>Quick links</h3>
+        <a href="#home">Home</a>
+        <a href="#technology">Technology</a>
+        <a href="#features">Features</a>
+        <a href="#team">Team</a>
+      </div>
+      <div><h3>Get in touch</h3>
+        <a href="mailto:team@raktdrishti.in">team@raktdrishti.in</a>
+        <p>College / Department<br>India</p>
+      </div>
+      <div class="footer-disclaimer">
+          <h3>Prototype disclaimer</h3>
+          <p>Raktdrishti is a student research and educational prototype. It is not a clinically validated medical device and should not be used as a substitute for professional medical advice, diagnosis, or laboratory testing.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Raktdrishti. Built for innovation in accessible healthcare.</p>
+        <a href="#home">Back to top 
+          <span data-icon="arrow-up">
+
+          </span>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/javascript/main.js"></script>
+</body>
+</html>
